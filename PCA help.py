@@ -1,5 +1,5 @@
 #reused helper_functions.py in MiniPCA with annotations
-def scree_plot(pca):
+def scree_plot(pca,fig_name=''):
     '''
     Creates a scree plot associated with the principal components 
     
@@ -25,7 +25,7 @@ def scree_plot(pca):
  
     ax.set_xlabel("Principal Component")
     ax.set_ylabel("Variance Explained (%)")
-    plt.title('Explained Variance Per Principal Component')
+    plt.title(fig_name + 'Explained Variance Per Principal Component')
     
     
     #from helper_functions.py in MiniPCA 
